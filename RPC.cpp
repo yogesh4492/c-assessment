@@ -69,7 +69,8 @@ class main1{
 		cout<<"computer Choice is : "<<c_ch1<<endl;
 		
 		cout<<endl;
-	    switch(ch){
+	    switch(ch)//outer switch is check user and inner switch checks the computer choice is comparevwhith ich other
+		{
 	    	case 1:
 	    		switch(c_ch1){
 				    case 1:
