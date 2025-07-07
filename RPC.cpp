@@ -71,43 +71,51 @@ class main1{
 		cout<<endl;
 	    switch(ch){
 	    	case 1:
-	    		if(c_ch1==2){
+	    		switch(c_ch1){
+				    case 1:
+				    	cout<<"Draw "<<endl;
+				    	break;
+	    			case 2:
 	    			cout<<"Computer Win"<<endl;
 	    			c_s++;
-				}
-				else if(c_ch1==3){
-					cout<<"You Win "<<endl;
+	    			break;
+				    case 3:
+				    cout<<"You Win "<<endl;
 					y_s++;
-				}
-				else{
-					cout<<"draw";
-				}
-				
+					break;
+			}
+	    				
+	    		
 				break;
 			case 2:
-				if(c_ch1==1){
-					cout<<"You win"<<endl;
-					y_s++;
-				}
-				else if(c_ch1==3){
-					cout<<"Computer win"<<endl;
+				switch(c_ch1){
+				    case 1:
+				    	cout<<"You Win "<<endl;
+				    	y_s++;
+				    	break;
+	    			case 2:
+	    			cout<<"Draw "<<endl;
+	    			break;
+				    case 3:
+				    cout<<"Computer Win "<<endl;
 					c_s++;
-				}
-				else{
-					cout<<"draw";
-				}
+					break;
+			}
 				break;
 			case 3:
-				if(c_ch1==1){
-					cout<<"Computer win"<<endl;
-					c_s++;}
-				else if(c_ch1==2){
-					cout<<"You win"<<endl;
-					y_s++;
-				}
-				else{
-					cout<<"draw";
-				}
+				switch(c_ch1){
+				    case 1:
+				    	cout<<"Computer Win "<<endl;
+				    	c_s++;
+				    	break;
+	    			case 2:
+	    			cout<<"You Win"<<endl;
+	    			y_s++;
+	    			break;
+				    case 3:
+				    cout<<"Draw  "<<endl;
+					break;
+			}
 				
 				break;
 			default:
